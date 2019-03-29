@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SetActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/wechat"
+            android:text="绑定位置微信"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textSize="25dp"
+                android:text="请您的子女关注微信公众号“wxpusher”点击我的ID将userId复制到下方并填写老人常住位置，一旦位置与常住位置不同，您的微信将告警"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/user_id"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:hint="请输入userId"
+                android:layout_marginTop="145dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/user_location"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:hint="请输入老人常住位置"
+                android:layout_marginTop="185dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_marginTop="225dp"
+                android:textSize="25dp"
+                android:id="@+id/locationBtn"
+                android:text="确定并测试"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="345dp"
+        android:background="@color/colorPink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/jingji"
+            android:text="设置紧急联系人"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:background="@color/colorWhite"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="姓名："
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/jinji_name"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="30dp"
+                    android:text="号码："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/jinji_number"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:layout_marginTop="100dp"
+                android:id="@+id/OkBtn"
+                android:textSize="30dp"
+                android:text="确定添加或修改"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="560dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPink"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/about"
+            android:text="关于本软件"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="38dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="本软件为南昌大学软件学院创新创业项目\n关爱老人智能手机APP\nV1.0.0\n如有更好建议，欢迎联系\n作者电话：13361618521\n作者QQ：1253009918"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
